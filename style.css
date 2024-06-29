@@ -66,9 +66,42 @@ p {
   background-color: #eeeeee;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.3s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #949292;
 }
 
 .hidden {
   display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .slider {
+    padding: 24px 0;
+  }
+
+  .prev,
+  .next {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .number {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
